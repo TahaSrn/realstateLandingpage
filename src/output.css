@@ -7,12 +7,21 @@
       "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
-    --color-red-200: oklch(88.5% 0.062 18.334);
-    --color-red-400: oklch(70.4% 0.191 22.216);
-    --color-red-800: oklch(44.4% 0.177 26.899);
+    --color-red-500: oklch(63.7% 0.237 25.331);
+    --color-amber-500: oklch(76.9% 0.188 70.08);
+    --color-blue-500: oklch(62.3% 0.214 259.815);
+    --color-gray-300: oklch(87.2% 0.01 258.338);
+    --color-gray-400: oklch(70.7% 0.022 261.325);
     --color-black: #000;
+    --color-white: #fff;
+    --spacing: 0.25rem;
+    --radius-lg: 0.5rem;
     --default-font-family: var(--font-sans);
     --default-mono-font-family: var(--font-mono);
+    --color-white1: #FFFFFF;
+    --color-purple: #7065F0;
+    --font-ag-bold: ag-bold;
+    --font-ag-reg: ag-reg;
   }
 }
 @layer base {
@@ -164,14 +173,53 @@
   }
 }
 @layer utilities {
+  .ml-\[3vw\] {
+    margin-left: 3vw;
+  }
+  .flex {
+    display: flex;
+  }
   .table {
     display: table;
+  }
+  .h-1 {
+    height: calc(var(--spacing) * 1);
+  }
+  .h-1\/2 {
+    height: calc(1/2 * 100%);
+  }
+  .h-2 {
+    height: calc(var(--spacing) * 2);
+  }
+  .h-2\/3 {
+    height: calc(2/3 * 100%);
+  }
+  .h-3 {
+    height: calc(var(--spacing) * 3);
+  }
+  .h-3\/5 {
+    height: calc(3/5 * 100%);
   }
   .h-\[5vw\] {
     height: 5vw;
   }
-  .h-\[10vw\] {
-    height: 10vw;
+  .h-full {
+    height: 100%;
+  }
+  .w-\[25\%\] {
+    width: 25%;
+  }
+  .w-\[30\%\] {
+    width: 30%;
+  }
+  .w-\[35\%\] {
+    width: 35%;
+  }
+  .w-\[40\%\] {
+    width: 40%;
+  }
+  .w-\[50\%\] {
+    width: 50%;
   }
   .w-full {
     width: 100%;
@@ -179,15 +227,70 @@
   .border-collapse {
     border-collapse: collapse;
   }
+  .cursor-pointer {
+    cursor: pointer;
+  }
   .resize {
     resize: both;
+  }
+  .items-center {
+    align-items: center;
+  }
+  .justify-center {
+    justify-content: center;
+  }
+  .gap-1 {
+    gap: calc(var(--spacing) * 1);
+  }
+  .gap-3 {
+    gap: calc(var(--spacing) * 3);
+  }
+  .gap-\[2vw\] {
+    gap: 2vw;
+  }
+  .gap-\[3vw\] {
+    gap: 3vw;
+  }
+  .rounded-lg {
+    border-radius: var(--radius-lg);
   }
   .border {
     border-style: var(--tw-border-style);
     border-width: 1px;
   }
-  .bg-black {
-    background-color: var(--color-black);
+  .border-2 {
+    border-style: var(--tw-border-style);
+    border-width: 2px;
+  }
+  .border-amber-500 {
+    border-color: var(--color-amber-500);
+  }
+  .border-black {
+    border-color: var(--color-black);
+  }
+  .border-blue-500 {
+    border-color: var(--color-blue-500);
+  }
+  .border-red-500 {
+    border-color: var(--color-red-500);
+  }
+  .bg-purple {
+    background-color: var(--color-purple);
+  }
+  .bg-white1 {
+    background-color: var(--color-white1);
+  }
+  .font-ag-bold {
+    font-family: var(--font-ag-bold);
+  }
+  .font-ag-reg {
+    font-family: var(--font-ag-reg);
+  }
+  .text-\[1\.3vw\] {
+    font-size: 1.3vw;
+  }
+  .text-white {
+    color: var(--color-white);
   }
   .underline {
     text-decoration-line: underline;
@@ -196,6 +299,28 @@
     outline-style: var(--tw-outline-style);
     outline-width: 1px;
   }
+  .outline-1 {
+    outline-style: var(--tw-outline-style);
+    outline-width: 1px;
+  }
+  .outline-2 {
+    outline-style: var(--tw-outline-style);
+    outline-width: 2px;
+  }
+  .outline-gray-300 {
+    outline-color: var(--color-gray-300);
+  }
+  .outline-gray-400 {
+    outline-color: var(--color-gray-400);
+  }
+}
+@font-face {
+  font-family: ag-bold;
+  src: url("/src/assets/fonts/other/Aeonik/fonnts.com-Aeonik-Bold.ttf");
+}
+@font-face {
+  font-family: ag-reg;
+  src: url("/src/assets/fonts/other/Aeonik/fonnts.com-Aeonik-Regular.ttf");
 }
 @property --tw-border-style {
   syntax: "*";

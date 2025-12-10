@@ -1,6 +1,16 @@
 @import "tailwindcss";
+@font-face {
+    font-family: ag-bold;
+    src: url("/src/assets/fonts/other/Aeonik/fonnts.com-Aeonik-Bold.ttf");
+}
+@font-face {
+    font-family: ag-reg;
+    src: url("/src/assets/fonts/other/Aeonik/fonnts.com-Aeonik-Regular.ttf");
+}
 
 @theme{
     --color-white1:#FFFFFF;
-
+    --color-purple:#7065F0;
+    --font-ag-bold : ag-bold;
+    --font-ag-reg : ag-reg;
 }

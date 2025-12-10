@@ -7,6 +7,40 @@
     <link rel="stylesheet" href="/src/output.css">
 </head>
 <body>
-    <footer class="bg-black h-[5vw] w-full"></footer>
+    <footer class="bg-white1 h-[5vw] w-full flex border border-black">
+        <div class="w-[25%] h-full">
+            <div class="font-ag-bold w-[40%] h-full flex items-center ml-[3vw] gap-1">
+                <img src="/src/assets/images/footerImage.png" class="w-[30%]" alt="">
+                <h1 class="text-[1.3vw]">Estatery</h1>
+            </div>
+        </div>
+        <div class="w-[50%] h-full flex items-center justify-center font-ag-reg gap-[3vw]">
+            <ul class="flex gap-[3vw] cursor-pointer">
+                <li>Rent</li>
+                <li>Buy</li>
+                <li>Sell</li>
+            </ul>
+            <details class="dropdown">
+                <summary>ManageProperty</summary>
+                <ul>
+                    <li><a href="#">option 1</a></li>
+                    <li><a href="#">option 2</a></li>
+                    <li><a href="#">option 3</a></li>
+                  </ul>
+            </details>
+            <details class="dropdown">
+                <summary>Resources</summary>
+                <ul>
+                    <li><a href="#">option 1</a></li>
+                    <li><a href="#">option 2</a></li>
+                    <li><a href="#">option 3</a></li>
+                  </ul>
+            </details>
+        </div>
+        <div class="w-[25%] h-full flex items-center justify-center gap-3 font-ag-bold">
+            <button class="bg-white1 outline-2 outline-gray-300 rounded-lg w-[35%] h-3/5">Login</button>
+            <button class="bg-purple outline-2 outline-gray-400 text-white rounded-lg w-[35%] h-3/5">Sign Up</button>
+        </div>
+    </footer>
 </body>
 </html>
