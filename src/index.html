@@ -9,7 +9,7 @@
 </head>
 
 <body>
-    <footer class="bg-white1 h-[5vw] w-full flex border-black">
+    <header class="bg-white1 h-[5vw] w-full flex border-black">
         <div class="w-[25%] h-full">
             <div class="font-ag-bold w-[40%] h-full flex items-center ml-[3vw] gap-1">
                 <img src="/src/assets/images/footerImage.png" class="w-[30%]" alt="">
@@ -43,13 +43,15 @@
             <button class="bg-white1 outline-2 outline-gray-300 rounded-lg w-[35%] h-3/5">Login</button>
             <button class="bg-purple outline-2 outline-gray-400 text-white rounded-lg w-[35%] h-3/5">Sign Up</button>
         </div>
-    </footer>
+    </header>
 
-    <section class="h-[35vw] w-full bg-purplewhite flex overflow-hidden">
-        
+    <section class="h-[38vw] w-full bg-purplewhite flex overflow-hidden">
+
         <div class="h-full w-[55%]">
-            <div class="h-[40%] w-full font-ag-bold text-[2.8vw] pl-[20%] pt-[2%]">Buy, rent, or sell <br> your property <br> easily</div>
-            <div class="h-[10%] w-full font-ag-reg pl-[20%]">A great platform to buy, sell, or even rent your <br> properties without any commisions.</div>
+            <div class="h-[40%] w-full font-ag-bold text-[2.8vw] pl-[20%] pt-[2%]">Buy, rent, or sell <br> your property
+                <br> easily</div>
+            <div class="h-[10%] w-full font-ag-reg pl-[20%]">A great platform to buy, sell, or even rent your <br>
+                properties without any commisions.</div>
             <div class="flex items-end h-[20%] w-full pl-[20%]">
                 <div class="h-[70%] w-[30%] border-l-2 border-gray-500 pl-[2%] flex flex-col justify-center">
                     <h3 class="text-[2.2vw] font-ag-bold text-purple">50K+</h3>
@@ -60,12 +62,103 @@
                     <p class="font-ag-reg text-gray-600 mt-[-5%]">properties</p>
                 </div>
             </div>
-        </div>
-        
-        <div class="bg-[url('/src/assets/images/sec1img.png')] h-full w-[45%]">
+            <div class="h-[30%] w-full pl-[20%] mt-[3%]">
+
+                <!-- Tabs Header -->
+                <div class="h-[30%] w-[45%] bg-white1 flex justify-between rounded-t-lg">
+                    <label for="Rent1" class="w-[30%] h-full flex items-center justify-center text-[1.3vw] font-ag-reg cursor-pointer">
+                        Rent
+                    </label>
+                    <label for="Buy1" class="w-[30%] h-full flex items-center justify-center text-[1.3vw] font-ag-reg cursor-pointer">
+                        Buy
+                    </label>
+                    <label for="Sell1" class="w-[30%] h-full flex items-center justify-center text-[1.3vw] font-ag-reg cursor-pointer">
+                        Sell
+                    </label>
+                </div>
             
+                <!-- Rent -->
+                <div>
+                    <input type="radio" id="Rent1" name="tabs" class="peer hidden" checked>
+                    <div class="hidden peer-checked:flex bg-white1 h-[5vw] w-[80%] rounded-b-lg rounded-tr-lg items-center justify-center">
+                        this is for rent
+                    </div>
+                </div>
+            
+                <!-- Buy -->
+                <div>
+                    <input type="radio" id="Buy1" name="tabs" class="peer hidden">
+                    <div class="hidden peer-checked:flex bg-white1 h-[5vw] w-[80%] rounded-b-lg rounded-tr-lg items-center justify-center">
+                        this is for buy
+                    </div>
+                </div>
+            
+                <!-- Sell -->
+                <div>
+                    <input type="radio" id="Sell1" name="tabs" class="peer hidden">
+                    <div class="hidden peer-checked:flex bg-white1 h-[5vw] w-[80%] rounded-b-lg rounded-tr-lg items-center justify-center">
+                        this is for sell
+                    </div>
+                </div>
+            
+            </div>
+            
+
         </div>
+
+        <div class="bg-[url('/src/assets/images/sec1img.png')] h-full w-[45%] relative">
+            <div class="absolute h-[20vw] w-[35%] bg-white1 left-[1vw] top-[4vw] rounded-xl flex-col overflow-hidden">
+                <div class="h-1/2 w-full bg-[url('/src/assets/images/house1.png')] bg-no-repeat bg-cover"></div>
+                <div class="h-[15%] w-full text-[1.5vw] font-ag-bold text-purple pl-[1vw] pt-[0.7vw]">$2,700<span
+                        class="font-ag-reg text-gray-500 text-[0.7vw]">/month</span></div>
+                <div class="h-[22%] w-[85%] ml-[1.1vw] flex-col border-b border-gray-300">
+                    <div class="h-[45%] w-full font-ag-bold text-[1.25vw]">Beverly Springfield</div>
+                    <div class="h-[40%] w-full font-ag-reg text-gray-500 text-[0.8vw]">2821 Lake Sevilla, Palm Harbor,
+                        TX</div>
+                </div>
+                <div class="h-[13%] w-full ml-[1.1vw] flex">
+                    <div class="h-full w-[25%] flex items-center gap-[0.2vw] text-[0.9vw] font-ag-reg text-gray-500">
+                        <img src="/src/assets/images/Icon.png" class="h-1/2" alt="">
+                        4
+                    </div>
+                    <div class="h-full w-[25%] flex items-center gap-[0.2vw] text-[0.9vw] font-ag-reg text-gray-500">
+                        <img src="/src/assets/images/Icon (1).png" class="h-1/2" alt="">
+                        2
+                    </div>
+                    <div class="h-full w-[35%] flex items-center gap-[0.2vw] text-[0.9vw] font-ag-reg text-gray-500">
+                        <img src="/src/assets/images/Icon (2).png" class="h-1/2" alt="">
+                        6x7.5 m²
+                    </div>
+                </div>
+            </div>
+            <div class="absolute h-[16vw] w-[30%] bg-white1 left-[26vw] top-[21vw] rounded-xl flex-col overflow-hidden">
+                <div class="h-1/2 w-full bg-[url('/src/assets/images/house2.png')] bg-no-repeat bg-cover"></div>
+                <div class="h-[15%] w-full text-[1.3vw] font-ag-bold text-purple pl-[1vw] pt-[0.7vw]">$1,600<span
+                        class="font-ag-reg text-gray-500 text-[0.7vw]">/month</span></div>
+                <div class="h-[22%] w-[85%] ml-[1.1vw] flex-col border-b border-gray-300">
+                    <div class="h-[45%] w-full font-ag-bold text-[1.1vw]">Tarpon Bay</div>
+                    <div class="h-[40%] w-full font-ag-reg text-gray-500 text-[0.7vw]">Palm Harbor, TX</div>
+                </div>
+                <div class="h-[13%] w-full ml-[1.1vw] flex">
+                    <div class="h-full w-[25%] flex items-center gap-[0.2vw] text-[0.8vw] font-ag-reg text-gray-500">
+                        <img src="/src/assets/images/Icon.png" class="h-1/2" alt="">
+                        4
+                    </div>
+                    <div class="h-full w-[25%] flex items-center gap-[0.2vw] text-[0.8vw] font-ag-reg text-gray-500">
+                        <img src="/src/assets/images/Icon (1).png" class="h-1/2" alt="">
+                        2
+                    </div>
+                    <div class="h-full w-[35%] flex items-center gap-[0.2vw] text-[0.8vw] font-ag-reg text-gray-500">
+                        <img src="/src/assets/images/Icon (2).png" class="h-1/2" alt="">
+                        6x8 m²
+                    </div>
+                </div>
+            </div>
+        </div>
+
     </section>
+
+<script src="/src/assets/JS/style.js"></script>
 </body>
 
 </html>
