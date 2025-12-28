@@ -183,35 +183,8 @@
   .top-\[4vw\] {
     top: 4vw;
   }
-  .top-\[7\.2vw\] {
-    top: 7.2vw;
-  }
-  .top-\[7\.5vw\] {
-    top: 7.5vw;
-  }
-  .top-\[7vw\] {
-    top: 7vw;
-  }
-  .top-\[8\.5vw\] {
-    top: 8.5vw;
-  }
-  .top-\[8\.7vw\] {
-    top: 8.7vw;
-  }
   .top-\[8\.8vw\] {
     top: 8.8vw;
-  }
-  .top-\[8vw\] {
-    top: 8vw;
-  }
-  .top-\[10vw\] {
-    top: 10vw;
-  }
-  .top-\[15vw\] {
-    top: 15vw;
-  }
-  .top-\[20vw\] {
-    top: 20vw;
   }
   .top-\[21vw\] {
     top: 21vw;
@@ -219,32 +192,11 @@
   .top-\[24vw\] {
     top: 24vw;
   }
-  .top-\[25vw\] {
-    top: 25vw;
-  }
   .left-\[1vw\] {
     left: 1vw;
   }
-  .left-\[5vw\] {
-    left: 5vw;
-  }
-  .left-\[9vw\] {
-    left: 9vw;
-  }
-  .left-\[10\.5vw\] {
-    left: 10.5vw;
-  }
-  .left-\[10\.6vw\] {
-    left: 10.6vw;
-  }
   .left-\[10\.7vw\] {
     left: 10.7vw;
-  }
-  .left-\[10vw\] {
-    left: 10vw;
-  }
-  .left-\[11vw\] {
-    left: 11vw;
   }
   .left-\[12vw\] {
     left: 12vw;
@@ -252,14 +204,8 @@
   .left-\[26vw\] {
     left: 26vw;
   }
-  .z-0 {
-    z-index: 0;
-  }
   .z-1 {
     z-index: 1;
-  }
-  .z-2 {
-    z-index: 2;
   }
   .z-100 {
     z-index: 100;
@@ -300,14 +246,8 @@
   .h-\[3\.5vw\] {
     height: 3.5vw;
   }
-  .h-\[4vw\] {
-    height: 4vw;
-  }
   .h-\[5vw\] {
     height: 5vw;
-  }
-  .h-\[8vw\] {
-    height: 8vw;
   }
   .h-\[10\%\] {
     height: 10%;
@@ -350,9 +290,6 @@
   }
   .h-\[70\%\] {
     height: 70%;
-  }
-  .h-\[80\%\] {
-    height: 80%;
   }
   .h-full {
     height: 100%;
@@ -401,30 +338,6 @@
   }
   .rotate-15 {
     rotate: 15deg;
-  }
-  .rotate-45 {
-    rotate: 45deg;
-  }
-  .rotate-\[5\%\] {
-    rotate: 5%;
-  }
-  .rotate-\[5\] {
-    rotate: 5;
-  }
-  .rotate-\[5deg\] {
-    rotate: 5deg;
-  }
-  .rotate-\[12deg\] {
-    rotate: 12deg;
-  }
-  .rotate-\[15\] {
-    rotate: 15;
-  }
-  .rotate-\[15deg\] {
-    rotate: 15deg;
-  }
-  .rotate-\[20deg\] {
-    rotate: 20deg;
   }
   .cursor-pointer {
     cursor: pointer;
@@ -545,6 +458,9 @@
   .font-ag-reg {
     font-family: var(--font-ag-reg);
   }
+  .text-\[0\.5vw\] {
+    font-size: 0.5vw;
+  }
   .text-\[0\.7vw\] {
     font-size: 0.7vw;
   }
@@ -557,11 +473,20 @@
   .text-\[0\.95vw\] {
     font-size: 0.95vw;
   }
+  .text-\[0vw\] {
+    font-size: 0vw;
+  }
   .text-\[1\.1vw\] {
     font-size: 1.1vw;
   }
+  .text-\[1\.2vw\] {
+    font-size: 1.2vw;
+  }
   .text-\[1\.3vw\] {
     font-size: 1.3vw;
+  }
+  .text-\[1\.4vw\] {
+    font-size: 1.4vw;
   }
   .text-\[1\.05vw\] {
     font-size: 1.05vw;
@@ -569,14 +494,38 @@
   .text-\[1\.5vw\] {
     font-size: 1.5vw;
   }
+  .text-\[1\.6vw\] {
+    font-size: 1.6vw;
+  }
   .text-\[1\.25vw\] {
     font-size: 1.25vw;
+  }
+  .text-\[1vw\] {
+    font-size: 1vw;
   }
   .text-\[2\.2vw\] {
     font-size: 2.2vw;
   }
+  .text-\[2\.7vw\] {
+    font-size: 2.7vw;
+  }
   .text-\[2\.8vw\] {
     font-size: 2.8vw;
+  }
+  .text-\[2vw\] {
+    font-size: 2vw;
+  }
+  .text-\[3\.1vw\] {
+    font-size: 3.1vw;
+  }
+  .text-\[3vw\] {
+    font-size: 3vw;
+  }
+  .text-\[0\.vw\] {
+    color: 0.vw;
+  }
+  .text-\[vw\] {
+    color: vw;
   }
   .text-gray-500 {
     color: var(--color-gray-500);
@@ -613,6 +562,56 @@
   .peer-checked\:flex {
     &:is(:where(.peer):checked ~ *) {
       display: flex;
+    }
+  }
+  .md\:text-\[1\.1vw\] {
+    @media (width >= 48rem) {
+      font-size: 1.1vw;
+    }
+  }
+  .md\:text-\[1\.2vw\] {
+    @media (width >= 48rem) {
+      font-size: 1.2vw;
+    }
+  }
+  .md\:text-\[1\.3vw\] {
+    @media (width >= 48rem) {
+      font-size: 1.3vw;
+    }
+  }
+  .md\:text-\[1\.4vw\] {
+    @media (width >= 48rem) {
+      font-size: 1.4vw;
+    }
+  }
+  .md\:text-\[1\.05vw\] {
+    @media (width >= 48rem) {
+      font-size: 1.05vw;
+    }
+  }
+  .md\:text-\[1\.5vw\] {
+    @media (width >= 48rem) {
+      font-size: 1.5vw;
+    }
+  }
+  .md\:text-\[1\.8vw\] {
+    @media (width >= 48rem) {
+      font-size: 1.8vw;
+    }
+  }
+  .md\:text-\[2\.2vw\] {
+    @media (width >= 48rem) {
+      font-size: 2.2vw;
+    }
+  }
+  .md\:text-\[3\.8vw\] {
+    @media (width >= 48rem) {
+      font-size: 3.8vw;
+    }
+  }
+  .md\:text-\[3vw\] {
+    @media (width >= 48rem) {
+      font-size: 3vw;
     }
   }
 }
