@@ -16,3 +16,15 @@
     --font-ag-reg : ag-reg;
 }
 
+@layer utilities{
+    .bx_sh{
+        box-shadow: 0 0 25px #E0DEF7;
+    }
+}
+
+@layer components{
+    .btn{
+        @apply bg-purple text-white1 font-ag-bold rounded-lg;
+    }
+}
+

@@ -7,6 +7,7 @@
       "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
+    --color-red-600: oklch(57.7% 0.245 27.325);
     --color-gray-300: oklch(87.2% 0.01 258.338);
     --color-gray-400: oklch(70.7% 0.022 261.325);
     --color-gray-500: oklch(55.1% 0.027 264.364);
@@ -180,17 +181,17 @@
   .relative {
     position: relative;
   }
+  .top-\[-35\%\] {
+    top: -35%;
+  }
   .top-\[4vw\] {
     top: 4vw;
-  }
-  .top-\[6\.25\%\] {
-    top: 6.25%;
   }
   .top-\[8\.8vw\] {
     top: 8.8vw;
   }
-  .top-\[12\.5\%\] {
-    top: 12.5%;
+  .top-\[15\%\] {
+    top: 15%;
   }
   .top-\[21vw\] {
     top: 21vw;
@@ -198,11 +199,17 @@
   .top-\[24vw\] {
     top: 24vw;
   }
-  .top-\[25\%\] {
-    top: 25%;
+  .top-\[80\%\] {
+    top: 80%;
+  }
+  .right-\[7\%\] {
+    right: 7%;
   }
   .left-\[1vw\] {
     left: 1vw;
+  }
+  .left-\[10\%\] {
+    left: 10%;
   }
   .left-\[10\.7vw\] {
     left: 10.7vw;
@@ -212,6 +219,9 @@
   }
   .left-\[26vw\] {
     left: 26vw;
+  }
+  .left-\[37\%\] {
+    left: 37%;
   }
   .z-1 {
     z-index: 1;
@@ -224,6 +234,9 @@
   }
   .mt-\[3\%\] {
     margin-top: 3%;
+  }
+  .mr-\[3\%\] {
+    margin-right: 3%;
   }
   .ml-\[1\.1vw\] {
     margin-left: 1.1vw;
@@ -255,11 +268,17 @@
   .h-\[3\.5vw\] {
     height: 3.5vw;
   }
+  .h-\[4vw\] {
+    height: 4vw;
+  }
   .h-\[5vw\] {
     height: 5vw;
   }
   .h-\[10\%\] {
     height: 10%;
+  }
+  .h-\[11\%\] {
+    height: 11%;
   }
   .h-\[13\%\] {
     height: 13%;
@@ -279,11 +298,11 @@
   .h-\[22\%\] {
     height: 22%;
   }
+  .h-\[25\%\] {
+    height: 25%;
+  }
   .h-\[30\%\] {
     height: 30%;
-  }
-  .h-\[30vw\] {
-    height: 30vw;
   }
   .h-\[38vw\] {
     height: 38vw;
@@ -291,17 +310,11 @@
   .h-\[40\%\] {
     height: 40%;
   }
-  .h-\[40vw\] {
-    height: 40vw;
-  }
   .h-\[45\%\] {
     height: 45%;
   }
   .h-\[45vw\] {
     height: 45vw;
-  }
-  .h-\[50vw\] {
-    height: 50vw;
   }
   .h-\[55\%\] {
     height: 55%;
@@ -312,6 +325,9 @@
   .h-\[70\%\] {
     height: 70%;
   }
+  .h-\[75\%\] {
+    height: 75%;
+  }
   .h-full {
     height: 100%;
   }
@@ -321,8 +337,8 @@
   .w-1\/2 {
     width: calc(1/2 * 100%);
   }
-  .w-1\/21 {
-    width: calc(1/21 * 100%);
+  .w-\[4vw\] {
+    width: 4vw;
   }
   .w-\[25\%\] {
     width: 25%;
@@ -335,6 +351,9 @@
   }
   .w-\[33\%\] {
     width: 33%;
+  }
+  .w-\[34\%\] {
+    width: 34%;
   }
   .w-\[35\%\] {
     width: 35%;
@@ -351,8 +370,8 @@
   .w-\[55\%\] {
     width: 55%;
   }
-  .w-\[60\%\] {
-    width: 60%;
+  .w-\[66\%\] {
+    width: 66%;
   }
   .w-\[70\%\] {
     width: 70%;
@@ -452,6 +471,9 @@
   .border-gray-500 {
     border-color: var(--color-gray-500);
   }
+  .border-red-600 {
+    border-color: var(--color-red-600);
+  }
   .bg-purple {
     background-color: var(--color-purple);
   }
@@ -488,6 +510,9 @@
   .pl-\[2\%\] {
     padding-left: 2%;
   }
+  .pl-\[10\%\] {
+    padding-left: 10%;
+  }
   .pl-\[20\%\] {
     padding-left: 20%;
   }
@@ -521,6 +546,9 @@
   .text-\[1\.4vw\] {
     font-size: 1.4vw;
   }
+  .text-\[1\.05vw\] {
+    font-size: 1.05vw;
+  }
   .text-\[1\.5vw\] {
     font-size: 1.5vw;
   }
@@ -529,6 +557,12 @@
   }
   .text-\[1vw\] {
     font-size: 1vw;
+  }
+  .text-\[2\.1vw\] {
+    font-size: 2.1vw;
+  }
+  .text-\[2\.2vw\] {
+    font-size: 2.2vw;
   }
   .text-\[2\.8vw\] {
     font-size: 2.8vw;
@@ -561,6 +595,9 @@
   .outline-2 {
     outline-style: var(--tw-outline-style);
     outline-width: 2px;
+  }
+  .outline-\[\#E0DEF7\] {
+    outline-color: #E0DEF7;
   }
   .outline-gray-300 {
     outline-color: var(--color-gray-300);
@@ -616,6 +653,19 @@
 @font-face {
   font-family: ag-reg;
   src: url("/src/assets/fonts/other/Aeonik/fonnts.com-Aeonik-Regular.ttf");
+}
+@layer utilities {
+  .bx_sh {
+    box-shadow: 0 0 25px #E0DEF7;
+  }
+}
+@layer components {
+  .btn {
+    border-radius: var(--radius-lg);
+    background-color: var(--color-purple);
+    font-family: var(--font-ag-bold);
+    color: var(--color-white1);
+  }
 }
 @property --tw-border-style {
   syntax: "*";
