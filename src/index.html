@@ -6,47 +6,110 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Real state</title>
     <link rel="stylesheet" href="/src/output.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 
 <body>
-    <header class="bg-white1 h-[5vw] w-full flex border-black">
+
+
+    <header
+        class="bg-white1 h-[15vw] md:h-[5vw] w-full flex md:justify-start justify-between border-b border-gray-100 relative md:items-start items-center px-4 md:px-0">
+
         <div class="w-[25%] h-full">
-            <div class="font-ag-bold w-[40%] h-full flex items-center ml-[3vw] gap-1">
-                <img src="/src/assets/images/footerImage.png" class="w-[30%]" alt="">
-                <h1 class="text-[1.5vw] md:text-[1.4vw]">Estatery</h1>
+            <div class="font-ag-bold w-full md:w-[40%] h-full flex items-center ml-[3vw] gap-1">
+                <img src="/src/assets/images/footerImage.png" class="w-[40%] md:w-[30%]" alt="logo">
+                <h1 class="text-[3.5vw] md:text-[1.4vw]">Estatery</h1>
             </div>
         </div>
-        <div class="w-[50%] h-full flex items-center justify-center font-ag-reg gap-[3vw]">
-            <ul class="text-[1.4vw] md:text-[1.2vw] flex gap-[3vw] cursor-pointer">
-                <li>Rent</li>
-                <li>Buy</li>
-                <li>Sell</li>
-            </ul>
-            <details class="dropdown text-[1.4vw] md:text-[1.2vw]">
-                <summary>ManageProperty</summary>
-                <ul>
-                    <li><a href="#">option 1</a></li>
-                    <li><a href="#">option 2</a></li>
-                    <li><a href="#">option 3</a></li>
-                </ul>
-            </details>
-            <details class="dropdown text-[1.4vw] md:text-[1.2vw]">
-                <summary>Resources</summary>
-                <ul>
-                    <li><a href="#">option 1</a></li>
-                    <li><a href="#">option 2</a></li>
-                    <li><a href="#">option 3</a></li>
-                </ul>
-            </details>
+
+        <div class="w-[20%] h-full flex md:hidden items-center justify-center text-[6vw]">
+            <label for="mobileMenu" class="fas fa-bars cursor-pointer"></label>
         </div>
-        <div class="w-[25%] h-full flex items-center justify-center gap-3 font-ag-bold">
+        <input type="checkbox" id="mobileMenu" class="peer hidden">
+
+        <div
+            class="fixed top-0 -left-full peer-checked:left-0 w-[75%] h-full bg-white z-[100] transition-all duration-300 shadow-2xl md:hidden flex flex-col p-6">
+            <div class="flex justify-between items-center mb-8">
+                <h1 class="font-ag-bold text-[5vw]">Estatery</h1>
+                <label for="mobileMenu" class="fas fa-times text-[6vw]"></label>
+            </div>
+            <ul class="font-ag-reg text-[4.5vw] flex flex-col gap-6">
+                <li class="hover:text-purple cursor-pointer">Rent</li>
+                <li class="hover:text-purple cursor-pointer">Buy</li>
+                <li class="hover:text-purple cursor-pointer">Sell</li>
+                <li class="hover:text-purple cursor-pointer">Manage Property</li>
+                <li class="hover:text-purple cursor-pointer">Resources</li>
+            </ul>
+            <div class="mt-auto flex flex-col gap-3 font-ag-bold">
+                <button class="bg-white1 border border-gray-200 rounded-lg py-3">Login</button>
+                <button class="bg-purple text-white rounded-lg py-3">Sign Up</button>
+            </div>
+        </div>
+
+        <div class="w-[50%] h-full hidden md:flex items-center justify-center font-ag-reg gap-[3vw]">
+            <ul class="text-[1.1vw] flex gap-[2.5vw] cursor-pointer items-center">
+                <li class="hover:text-purple transition-colors">Rent</li>
+                <li class="hover:text-purple transition-colors">Buy</li>
+                <li class="hover:text-purple transition-colors">Sell</li>
+
+                <li class="relative group">
+                    <details class="dropdown appearance-none list-none">
+                        <summary
+                            class="flex items-center gap-1 hover:text-purple transition-colors cursor-pointer list-none">
+                            Manage Property
+                            <i class="fas fa-chevron-down text-[0.7vw] group-open:rotate-180 transition-transform"></i>
+                        </summary>
+                        <ul
+                            class="absolute top-[120%] left-0 bg-white shadow-xl rounded-xl p-3 w-[12vw] border border-gray-50 z-50 flex flex-col gap-2">
+                            <li class="hover:bg-purple/10 p-2 rounded-lg transition-all text-[0.9vw]"><a
+                                    href="#">Property List</a></li>
+                            <li class="hover:bg-purple/10 p-2 rounded-lg transition-all text-[0.9vw]"><a
+                                    href="#">Invoices</a></li>
+                            <li class="hover:bg-purple/10 p-2 rounded-lg transition-all text-[0.9vw]"><a
+                                    href="#">Reports</a></li>
+                        </ul>
+                    </details>
+                </li>
+
+                <li class="relative group">
+                    <details class="dropdown appearance-none list-none">
+                        <summary
+                            class="flex items-center gap-1 hover:text-purple transition-colors cursor-pointer list-none">
+                            Resources
+                            <i class="fas fa-chevron-down text-[0.7vw] group-open:rotate-180 transition-transform"></i>
+                        </summary>
+                        <ul
+                            class="absolute top-[120%] left-0 bg-white shadow-xl rounded-xl p-3 w-[12vw] border border-gray-50 z-50 flex flex-col gap-2">
+                            <li class="hover:bg-purple/10 p-2 rounded-lg transition-all text-[0.9vw]"><a href="#">Blog
+                                    Post</a></li>
+                            <li class="hover:bg-purple/10 p-2 rounded-lg transition-all text-[0.9vw]"><a href="#">Help
+                                    Center</a></li>
+                        </ul>
+                    </details>
+                </li>
+            </ul>
+        </div>
+
+        <div class="w-[25%] h-full hidden md:flex items-center justify-center gap-3 font-ag-bold">
             <button
-                class="bg-white1 outline-2 outline-gray-300 rounded-lg w-[35%] h-3/5 text-[1vw] md:text-[1.1vw]">Login</button>
+                class="bg-white1 border border-gray-200 hover:bg-gray-50 transition-colors rounded-lg w-[35%] h-3/5 text-[1.1vw]">Login</button>
             <button
-                class="bg-purple outline-2 outline-gray-400 text-white rounded-lg w-[35%] h-3/5 text-[1vw] md:text-[1.1vw]">Sign
+                class="bg-purple text-white hover:opacity-90 transition-opacity rounded-lg w-[35%] h-3/5 text-[1.1vw]">Sign
                 Up</button>
         </div>
+
     </header>
+
+    <style>
+        /* حذف فلش پیش‌فرض مرورگر برای تگ summary */
+        summary::-webkit-details-marker {
+            display: none;
+        }
+
+        summary {
+            list-style: none;
+        }
+    </style>
 
     <section class="h-[100vw] md:h-[38vw] w-full bg-purplewhite flex overflow-hidden">
 
@@ -112,7 +175,8 @@
 
                         <div class="flex md:hidden h-full w-full">
                             <div class="h-full w-[80%] pl-[5%]">
-                                <input class="h-full w-full outline-0 text-[4vw]" type="search" placeholder="Search location">
+                                <input class="h-full w-full outline-0 text-[4vw]" type="search"
+                                    placeholder="Search location">
                             </div>
                             <div class="w-[20%] h-full flex items-center justify-center">
                                 <img class="w-[50%]" src="/src/assets/images/Button.png" alt="">
@@ -143,7 +207,8 @@
 
                         <div class="flex md:hidden h-full w-full">
                             <div class="h-full w-[80%] pl-[5%]">
-                                <input class="h-full w-full outline-0 text-[4vw]" type="search" placeholder="Search location">
+                                <input class="h-full w-full outline-0 text-[4vw]" type="search"
+                                    placeholder="Search location">
                             </div>
                             <div class="w-[20%] h-full flex items-center justify-center">
                                 <img class="w-[50%]" src="/src/assets/images/Button.png" alt="">
@@ -174,7 +239,8 @@
 
                         <div class="flex md:hidden h-full w-full">
                             <div class="h-full w-[80%] pl-[5%]">
-                                <input class="h-full w-full outline-0 text-[4vw]" type="search" placeholder="Search location">
+                                <input class="h-full w-full outline-0 text-[4vw]" type="search"
+                                    placeholder="Search location">
                             </div>
                             <div class="w-[20%] h-full flex items-center justify-center">
                                 <img class="w-[50%]" src="/src/assets/images/Button.png" alt="">
@@ -186,11 +252,13 @@
             </div>
 
             <div class="flex md:hidden items-center justify-start md:items-end h-[20%] w-[85%] md:w-full md:pl-[20%]">
-                <div class="h-[70%] w-[45%] md:w-[30%] border-l-1 md:border-l-2 border-purple pl-[2%] flex flex-col justify-center">
+                <div
+                    class="h-[70%] w-[45%] md:w-[30%] border-l-1 md:border-l-2 border-purple pl-[2%] flex flex-col justify-center">
                     <h3 class="text-[8vw] md:text-[2.2vw] font-ag-bold text-purple">50K+</h3>
                     <p class="text-[2.5vw] md:text-[1.3vw] font-ag-reg text-gray-600 mt-[-5%]">renters</p>
                 </div>
-                <div class="h-[70%] w-[35%] md:w-[30%] border-l-1 md:border-l-2 border-purple pl-[2%] flex flex-col justify-center">
+                <div
+                    class="h-[70%] w-[35%] md:w-[30%] border-l-1 md:border-l-2 border-purple pl-[2%] flex flex-col justify-center">
                     <h3 class="text-[8vw] md:text-[2.2vw] font-ag-bold text-purple">10K+</h3>
                     <p class="text-[2.5vw] md:text-[1.3vw] font-ag-reg text-gray-600 mt-[-5%]">properties</p>
                 </div>
@@ -261,7 +329,8 @@
 
     <section class="bg-white1 w-full flex flex-col md:flex-row md:h-[45vw] items-center">
         <div class="w-full md:w-[45%] h-[50%] md:h-full relative flex items-center justify-center md:justify-end">
-            <img class="w-[85%] md:w-[75%] md:mr-[1%] mt-[5%] md:mt-0 md:mb-0 mb-[4%]" src="/src/assets/images/sec2img.png" alt="">
+            <img class="w-[85%] md:w-[75%] md:mr-[1%] mt-[5%] md:mt-0 md:mb-0 mb-[4%]"
+                src="/src/assets/images/sec2img.png" alt="">
             <div
                 class="flex absolute bg-white1 h-[13%] md:h-[11%] w-[60%] md:w-[50%] rounded-lg left-[5%] md:left-[10%] top-[15%] bx_sh outline-2 outline-[#E0DEF7]">
                 <div class="w-[34%] h-full flex justify-center items-center">
@@ -283,14 +352,17 @@
                 </div>
             </div>
         </div>
-        <div class="w-full md:w-[55%] h-[80vw] md:h-[60%] relative md:pl-[10%] flex flex-col md:items-start items-center">
+        <div
+            class="w-full md:w-[55%] h-[80vw] md:h-[60%] relative md:pl-[10%] flex flex-col md:items-start items-center">
             <div class="w-full h-[25%] flex items-center md:justify-start justify-center">
-                <div class="w-[85%] md:w-[40%] h-[70%] border-[#DEDEF7] border rounded-lg flex items-center bg-smpurple">
+                <div
+                    class="w-[85%] md:w-[40%] h-[70%] border-[#DEDEF7] border rounded-lg flex items-center bg-smpurple">
                     <div
                         class="w-[47%] h-[73%] border rounded-lg ml-[3%] border-[#DEDEF7] bg-white1 text-purple font-ag-bold out flex items-center justify-center text-[3.5vw] md:text-[1.1vw]">
                         For tenants
                     </div>
-                    <div class="w-1/2 h-full flex items-center justify-center text-[3.5vw] md:text-[1.1vw] font-ag-reg text-gray-500">
+                    <div
+                        class="w-1/2 h-full flex items-center justify-center text-[3.5vw] md:text-[1.1vw] font-ag-reg text-gray-500">
                         For landlords
                     </div>
                 </div>
@@ -303,7 +375,8 @@
                 efficient. The best part? you’ll save a bunch of money and time with our services.
             </div>
             <div class="h-[20%] w-full md:w-1/2 flex justify-center md:justify-start items-center">
-                <button class="w-[85%] md:w-[50%] h-[70%] btn font-ag-bold text-[3.2vw] md:text-[1.2vw]">See more ></button>
+                <button class="w-[85%] md:w-[50%] h-[70%] btn font-ag-bold text-[3.2vw] md:text-[1.2vw]">See more
+                    ></button>
             </div>
         </div>
     </section>
@@ -311,38 +384,56 @@
 
     <section class="w-full h-[180vw] md:h-[35vw] flex items-center justify-center">
         <div class="w-[80%] h-[90%] bg-ppbg outline-1 outline-strokepurple rounded flex md:flex-row flex-col ">
-            <div class="w-full md:w-[55%] h-[65%] md:h-full border border-red-600">
+            <div class="w-full md:w-[55%] h-[65%] md:h-full">
                 <div class="w-full h-1/2 md:pl-[7%] md:pt-[7%] text-center flex flex-col items-center">
-                    <p class="font-ag-bold text-[7vw] w-1/2 md:w-auto md:text-[3.25vw] text-black">The new way to find your new home</p>
-                    <p class="font-ag-reg text-[3vw] md:text-[1.1vw] w-[65%] md:w-[50%] mt-[2%] text-gray-500">Find your dream place to live in with more than 10k+ properties listed.</p>
+                    <p class="font-ag-bold text-[7vw] w-1/2 md:w-auto md:text-[3.25vw] text-black">The new way to find
+                        your new home</p>
+                    <p class="font-ag-reg text-[3vw] md:text-[1.1vw] w-[65%] md:w-[50%] mt-[2%] text-gray-500">Find your
+                        dream place to live in with more than 10k+ properties listed.</p>
                 </div>
-                <div class="w-full h-[50%] flex items-center border">
-                    <div class="h-[60%] w-[91%] flex flex-col md:flex-row justify-between ml-[3%] border">
-                        <div class="w-[30%] h-full flex flex-col items-center justify-center">
-                            <img class="w-[55%]" src="/src/assets/images/Icon21.png" alt="">
-                            <p class="font-ag-bold text-[1.5vw]">7.4%</p>
-                            <p class="font-ag-reg text-[0.9vw] text-gray-500">Property Return Rate</p>
+                <div class="w-full h-[50%] flex items-center">
+                    <div
+                        class="h-full md:h-[60%] w-full flex flex-col md:flex-row justify-between md:ml-[3%] items-center md:items-start">
+                        <div class="w-full md:w-[30%] h-full flex flex-row md:flex-col items-center justify-center">
+                            <div class="md:w-[80%] h-full flex items-center justify-center w-1/4 ">
+                                <img class="w-[75%] md:w-[55%]" src="/src/assets/images/Icon21.png" alt="">
+                            </div>
+                            <div class="h-full flex flex-col items-center justify-center md:w-full w-[30%] ">
+                                <p class="font-ag-bold text-[5.5vw] md:text-[1.5vw]">7.4%</p>
+                                <p class="font-ag-reg text-[1.7vw] md:text-[0.9vw] text-gray-500">Property Return Rate
+                                </p>
+                            </div>
                         </div>
-                        <div class="w-[30%] h-full flex flex-col items-center justify-center">
-                            <img class="w-[55%]" src="/src/assets/images/Icon 22.png" alt="">
-                            <p class="font-ag-bold text-[1.5vw]">3,856</p>
-                            <p class="font-ag-reg text-[0.9vw] text-gray-500">Property in Sell & Rent</p>
+                        <div class="w-full md:w-[30%] h-full flex flex-row md:flex-col items-center justify-center ">
+                            <div class="md:w-[80%] h-full flex items-center justify-center w-1/4">
+                                <img class="w-[75%] md:w-[55%]" src="/src/assets/images/Icon 22.png" alt="">
+                            </div>
+                            <div class="h-full flex flex-col items-center justify-center md:w-full w-[30%] ">
+                                <p class="font-ag-bold text-[5.5vw] md:text-[1.5vw]">3,856</p>
+                                <p class="font-ag-reg text-[1.7vw] md:text-[0.9vw] text-gray-500">Property in Sell &
+                                    Rent</p>
+                            </div>
                         </div>
-                        <div class="w-[30%] h-full flex flex-col items-center justify-center">
-                            <img class="w-[55%]" src="/src/assets/images/Icon 23.png" alt="">
-                            <p class="font-ag-bold text-[1.5vw]">2,540</p>
-                            <p class="font-ag-reg text-[0.9vw] text-gray-500 w-[104%]">Daily Completed Transactions</p>
+                        <div class="w-full  md:w-[30%] h-full flex flex-row md:flex-col items-center justify-center ">
+                            <div class="md:w-[80%]  h-full w-1/4 flex items-center justify-center">
+                                <img class="w-[75%] md:w-[55%]" src="/src/assets/images/Icon 23.png" alt="">
+                            </div>
+                            <div class="h-full flex flex-col items-center justify-center md:w-full w-[30%] ">
+                                <p class="font-ag-bold text-[5.5vw] md:text-[1.5vw]">2,540</p>
+                                <p class="font-ag-reg text-[1.7vw] md:text-[0.9vw] text-gray-500 w-full">Daily Completed
+                                    Transactions
+                                </p>
+                            </div>
                         </div>
-                        
+
                     </div>
                 </div>
             </div>
-            <div class="w-full md:w-[45%] h-[35%] md:h-full relative border border-red-600 overflow-hidden">
-                <img class="absolute inset-0 w-full h-full object-cover object-[40%_20%]" 
-                     src="/src/assets/images/g12.png" 
-                     alt="">
+            <div class="w-full md:w-[45%] h-[35%] md:h-full relative overflow-hidden">
+                <img class="absolute inset-0 w-full h-full object-cover object-[40%_20%]"
+                    src="/src/assets/images/g12.png" alt="">
             </div>
-        </div> 
+        </div>
     </section>
     <script src="/src/assets/JS/style.js"></script>
 </body>
