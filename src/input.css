@@ -27,7 +27,11 @@
 
 @layer components{
     .btn{
-        @apply bg-purple text-white1 font-ag-bold rounded-lg;
+        @apply bg-purple text-white1 font-ag-bold rounded-lg transition-transform duration-200 hover:scale-[1.02] active:scale-[0.98];
+    }
+    .btn-ripple {
+        position: relative;
+        overflow: hidden;
     }
 }
 
